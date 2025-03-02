@@ -1,0 +1,24 @@
+{
+  "name": "typescript-2",
+  "version": "1.0.0",
+  "description": "a todo list cli app",
+  "license": "ISC",
+  "author": "0x456665",
+  "type": "commonjs",
+  "main": "./compiled_js/index.js",
+  "scripts": {
+    "start": "node ./compiled_js/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.10",
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/node": "^22.13.8",
+    "@types/readline-sync": "^1.4.8"
+  }
+}
