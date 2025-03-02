@@ -35,7 +35,7 @@ while (choice !== 8) {
       break;
     }
     case 1: {
-      const task: string = readline.question("📝 Enter the task: ");
+      const task: string = readline.question("Enter the task: ");
       const hasDueDate: boolean =
         readline
           .question("Do you have a due date for this task? (y/n): ")
@@ -57,14 +57,14 @@ while (choice !== 8) {
     }
     case 2: {
       const id: number = readline.questionInt(
-        "✔️ Enter the ID of the todo item to mark as completed: "
+        "Enter the ID of the todo item to mark as completed: "
       );
       todoList.completeTodo(id);
       break;
     }
     case 3: {
       const id: number = readline.questionInt(
-        "🗑️ Enter the ID of the todo item to remove: "
+        "Enter the ID of the todo item to remove: "
       );
       const confirm = readline.question("Are you sure? (y/n): ");
       if (confirm.toLowerCase() !== "y") continue;
@@ -95,7 +95,7 @@ while (choice !== 8) {
     }
     case 6: {
       const id: number = readline.questionInt(
-        "📝 Enter the ID of the todo item to update: "
+        "Enter the ID of the todo item to update: "
       );
       const task: string = readline.question("📝 Enter the new task: ");
       todoList.updateTodo(id, task);
@@ -115,3 +115,4 @@ while (choice !== 8) {
     }
   }
 }
+
